@@ -13,6 +13,7 @@ if [ $# -eq 0 ]; then
 	exit 2
 fi
 
+#Toggle all LEDS ON
 if [ "$1" == "on" ]; then
 	echo "All LEDS are ON!"
 	echo 1 >> "$LED0"
@@ -21,6 +22,7 @@ if [ "$1" == "on" ]; then
 	echo 1 >> "$LED3"
 fi
 
+#Toggle all LEDS OFF
 if [ "$1" == "off" ]; then
 	echo "All LEDS are OFF!"
 	echo 0 >> "$LED0"
@@ -29,34 +31,49 @@ if [ "$1" == "off" ]; then
 	echo 0 >> "$LED3"
 fi
 
+#Toggle LED0 ON
 if [ "$1" == "0" ] && [ "$2" == "on" ]; then
 	echo "Toggled LED0 ON!"
 	echo 1 >> "$LED0"
 fi
+
+#Toggle LED0 OFF
 if [ "$1" == "0" ] && [ "$2" == "off" ]; then
 	echo "Toggled LED0 OFF!"
 	echo 0 >> "$LED0"
 fi
+
+#Toggle LED1 ON
 if [ "$1" == "1" ] && [ "$2" == "on" ]; then
 	echo "Toggled LED1 ON!"
 	echo 1 >> "$LED1"
 fi
+
+#Toggle LED1 OFF
 if [ "$1" == "1" ] && [ "$2" == "off" ]; then
 	echo "Toggled LED1 OFF!"
 	echo 0 >> "$LED1"
 fi
+
+#Toggle LED2 ON
 if [ "$1" == "2" ] && [ "$2" == "on" ]; then
 	echo "Toggled LED2 ON!"
 	echo 1 >> "$LED2"
 fi
+
+#Toggle LED2 OFF
 if [ "$1" == "2" ] && [ "$2" == "off" ]; then
 	echo "Toggled LED2 OFF!"
 	echo 0 >> "$LED2"
 fi
+
+#Toggle LED3 ON
 if [ "$1" == "3" ] && [ "$2" == "on" ]; then
 	echo "Toggled LED3 ON!"
 	echo 1 >> "$LED3"
 fi
+
+#Toggle LED3 OFF
 if [ "$1" == "3" ] && [ "$2" == "off" ]; then
 	echo "Toggled LED3 Off!"
 	echo 0 >> "$LED3"
