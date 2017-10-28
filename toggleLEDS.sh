@@ -1,4 +1,5 @@
 #!/bin/bash
+# by Anders Reiche 28th of october 2017
 
 LED0=/sys/class/leds/beaglebone:green:usr0/brightness
 LED1=/sys/class/leds/beaglebone:green:usr1/brightness
